@@ -13,4 +13,11 @@ spec:
     git: git@github.com:helm/charts
     path: charts/stable/metallb
     ref: master
-  values:    
+  values:
+    configInline:   
+     address-pools:
+     - name: default
+      protocol: layer2
+      addresses:
+      - 10.10.1.200-10.10.1.250
+    
