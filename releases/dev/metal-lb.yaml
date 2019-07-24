@@ -8,7 +8,7 @@ metadata:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:dev-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: metal-lb
   chart:
     git: git@github.com:helm/charts
     path: charts/stable/metallb
