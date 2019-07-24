@@ -10,5 +10,8 @@ metadata:
 spec:
   releaseName: metal-lb
   chart:
-    repository: https://kubernetes-charts.storage.googleapis.com
-    name: metallb
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: rabbitmq
+    version: 3.3.6
+  values:
+    replicas: 1
