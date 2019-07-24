@@ -10,11 +10,7 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:andrewdavies-net/helm-operator-get-started
-    path: charts/podinfo
+    git: git@github.com:helm/charts
+    path: charts/stable/metallb
     ref: master
-  values:
-    image: adavies/podinfo:dev-sc72ggp2
-    replicaCount: 1
-    hpa:
-      enabled: false
+  values:    
