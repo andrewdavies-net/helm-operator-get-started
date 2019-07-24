@@ -10,6 +10,5 @@ metadata:
 spec:
   releaseName: metal-lb
   chart:
-    git: git@github.com:helm/charts
-    path: charts/stable/metallb
-    ref: master
+    repository: https://kubernetes-charts.storage.googleapis.com
+    name: metallb
