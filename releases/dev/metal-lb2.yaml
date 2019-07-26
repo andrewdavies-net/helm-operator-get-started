@@ -2,16 +2,15 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: metal-lb
+  name: metal-lb2
   namespace: dev
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:dev-*
 spec:
-  releaseName: metal-lb
+  releaseName: metal-lb2
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: metallb    
+    name: metallb  
   values:
     replicas: 1
-
