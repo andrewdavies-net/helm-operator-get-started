@@ -2,8 +2,8 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
-  namespace: dev
+  name: podinfo-testns
+  namespace: testns
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:dev-*
