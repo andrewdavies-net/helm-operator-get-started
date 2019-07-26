@@ -11,7 +11,6 @@ spec:
   releaseName: metal-lb
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: metallb
-    version: 0.7.3
+    name: metallb    
   values:
     replicas: 1
