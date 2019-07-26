@@ -14,4 +14,9 @@ spec:
     name: metallb
     version: 0.9.7
   values:
-    replicas: 1
+    configInline:
+      address-pools:
+      - addresses:
+        - 10.10.1.230-10.10.1.250
+        name: default
+        protocol: layer2
